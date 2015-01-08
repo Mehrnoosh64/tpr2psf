@@ -339,7 +339,7 @@ IMPROPER
     for k, imp in self.par_idihs.items():
       for atypes in imp.types:
         print >>f, "%s %s %s %s  " % atypes,
-        print >>f, "%.5f 0 %.4f" % (imp.k*j2cal/2, imp.psi)
+        print >>f, "%.5f 0 %.4f" % (imp.k*j2cal/2, imp.phi)
 
     # Nonbonded
     print >>sys.stderr, "\tNonbonded parameters: %d"  % len(self.par_nb)
